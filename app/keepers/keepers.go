@@ -130,7 +130,6 @@ func (appKeepers *AppKeepers) InitNormalKeepers(
 	wasmConfig wasm.Config,
 	wasmEnabledProposals []wasm.ProposalType,
 	wasmOpts []wasm.Option,
-	blockedAddress map[string]bool,
 ) {
 	// Add 'normal' keepers
 	accountKeeper := authkeeper.NewAccountKeeper(

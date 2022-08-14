@@ -145,7 +145,6 @@ func (appKeepers *AppKeepers) InitNormalKeepers(
 		appKeepers.keys[banktypes.StoreKey],
 		appKeepers.AccountKeeper,
 		appKeepers.GetSubspace(banktypes.ModuleName),
-		blockedAddress,
 	)
 	appKeepers.BankKeeper = &bankKeeper
 
@@ -172,7 +171,6 @@ func (appKeepers *AppKeepers) InitNormalKeepers(
 		appKeepers.BankKeeper,
 		appKeepers.StakingKeeper,
 		authtypes.FeeCollectorName,
-		blockedAddress,
 	)
 	appKeepers.DistrKeeper = &distrKeeper
 
